@@ -16,6 +16,7 @@ def pipline(frame):
     contours, hierarchy = cv2.findContours(frame, cv2.RETR_TREE,
                                                 cv2.CHAIN_APPROX_SIMPLE)
     boxes = []
+
     if len(contours) > 0:
         #contours = sorted(contours, key=lambda x: cv2.contourArea(x))
         for contour in contours:
