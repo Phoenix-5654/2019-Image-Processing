@@ -53,6 +53,7 @@ def pipline(frame):
 def distance(point1: tuple, point2: tuple):
     return sqrt(pow(point1[0] - point2[0], 2) + pow(point1[1] - point2[0], 2))
 
+
 def get_average_point(point1, point2, shape1, shape2):
     return ((point1[0] + point2[0] + shape1[0] + shape2[0]) // 2,
             (point1[1] + point2[1] + shape1[1] + shape2[1]) // 2)
